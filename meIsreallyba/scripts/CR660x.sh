@@ -31,9 +31,9 @@ if [ $? -eq 0 ]; then
     sed -i "s/CONFIG_FIRMWARE_INCLUDE_${MOD}=n/CONFIG_FIRMWARE_INCLUDE_${MOD}=y/g" $config
     
 ##广告管理##
-echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> $m.config #adbyby plus+
+echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> $.config #adbyby plus+
 
  ##DNS服务##
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> $m.config #smartdns
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> $.config #smartdns
 #  done
 #fi
