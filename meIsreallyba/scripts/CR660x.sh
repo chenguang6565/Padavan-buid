@@ -20,6 +20,18 @@ sed -i 's/{ "wan_pppoe_passwd", "" }/{ "wan_pppoe_passwd", "672877" }/g' $defaul
 #echo "打开5G无线桥接"
 #sed -i 's/{ "wl_mode_x", "0" }/{ "wl_mode_x", "4" }/g' $default_path/defaults.c
 
+##echo 科学上网##
+sed -i "s/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y/CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y/g" $config
+sed -i "s/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/g" $config
+
+##echo 广告管理##
+sed -i "s/CONFIG_FIRMWARE_INCLUDE_ADBYBY=y/CONFIG_FIRMWARE_INCLUDE_ADBYBY=y/g" $config
+
+##echo DNS服务##
+sed -i "s/CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y/CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y/g" $config
+
+
+
 
 #  done
 #fi
